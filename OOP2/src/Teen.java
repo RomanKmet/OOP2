@@ -1,17 +1,18 @@
 public class Teen extends Child {
 
-    public Teen(String name) {
+    Teen(String name) {
         super(name);
     }
-    public int count(int... numbers) {
+
+    int count(int... numbers) {
         int sum = 0;
         for (int i : numbers)
             sum += i;
-        System.out.println(this.name + " добавив числа і получилось: " + sum);
+        System.out.println(this.getName() + " добавив числа і получилось: " + sum);
         return sum;
     }
-    public void write(int time) {
+    void write(int time) {
         int words = time * 4;
-        System.out.println(this.name + " за виділений час написав стільки слів: " + words);
+        System.out.println(this.getName() + " за виділений час написав стільки слів: " + words);
     }
 }

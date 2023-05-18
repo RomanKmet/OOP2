@@ -4,6 +4,11 @@ public class Main {
         Teen choosenTeen = new Teen("Данило");
         Adult choosenAdult = new Adult("Ярослав",54);
 
+        choosenChild.setMoney(50);
+        choosenTeen.setMoney(100);
+        choosenAdult.setMoney(200);
+        choosenAdult.howmuchmoney(choosenTeen, choosenChild);
+        System.out.println();
         choosenChild.count(5,10);
         choosenTeen.count(53,15,532,76,43);
         choosenAdult.count(54.3,123,34.8,43.4);

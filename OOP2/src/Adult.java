@@ -1,40 +1,69 @@
 public class Adult extends Teen {
-    double weight;
-    double height;
-    int age;
+    private double weight;
+    private double height;
+    private int age;
 
-    public Adult(String name) {
+    public double getWeight() {
+        return weight;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    Adult(String name) {
         super(name);
     }
 
-    public Adult(String name, double weight) {
+    Adult(String name, double weight) {
         super(name);
         this.weight = weight;
     }
 
-    public Adult(String name, double weight, double height) {
+    Adult(String name, double weight, double height) {
         super(name);
         this.weight = weight;
         this.height = height;
     }
 
-    public Adult(String name, double weight, double height, int age) {
+    Adult(String name, double weight, double height, int age) {
         super(name);
         this.weight = weight;
         this.height = height;
         this.age = age;
     }
 
-    public double count(double... numbers) {
+    double count(double... numbers) {
         double sum = 0;
         for (double i : numbers)
             sum += i;
-        System.out.println(name + " добавив дробові числа і получилось: " + String.format("%.3f", sum));
+        System.out.println(this.getName() + " добавив дробові числа і получилось: " + String.format("%.3f", sum));
         return sum;
     }
 
-    public void write(int time) {
+    void write(int time) {
         int words = time*6;
-        System.out.println(name + " за виділений час написав стільки слів: " + words);
+        System.out.println(this.getName() + " за виділений час написав стільки слів: " + words);
+    }
+
+    void howmuchmoney(Teen askedperson, Child askedperson2) {
+        System.out.println("В " + askedperson.getName() + " стільки грошей: " + askedperson.getMoney());
+        System.out.println("В " + askedperson2.getName() + " стільки грошей: " + askedperson2.getMoney());
     }
 }
