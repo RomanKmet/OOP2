@@ -3,30 +3,6 @@ public class Adult extends Teen {
     private double height;
     private int age;
 
-    public double getWeight() {
-        return weight;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     Adult(String name) {
         super(name);
     }
@@ -74,5 +50,28 @@ public class Adult extends Teen {
     void howMuchMoney(Teen askedperson, Child askedperson2) {
         System.out.println("В " + askedperson.getName() + " стільки грошей: " + askedperson.getMoney());
         System.out.println("В " + askedperson2.getName() + " стільки грошей: " + askedperson2.getMoney());
+    }
+    public double getWeight() {
+        return weight;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

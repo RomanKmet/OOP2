@@ -1,15 +1,6 @@
 public class Child {
     private String name;
     private int money;
-
-    public int getMoney() {
-        return money;
-    }
-
-    public void setMoney(int money) {
-        this.money = money;
-    }
-
     String getName() {
         return name;
     }
@@ -28,5 +19,12 @@ public class Child {
     void write(int time){
         int words = time * 2;
         System.out.println(this.name + " за виділений час написав стільки слів: " + words);
+    }
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 }
