@@ -7,7 +7,7 @@ public class Main {
         choosenChild.setMoney(50);
         choosenTeen.setMoney(100);
         choosenAdult.setMoney(200);
-        choosenAdult.howmuchmoney(choosenTeen, choosenChild);
+        choosenAdult.howMuchMoney(choosenTeen, choosenChild);
         System.out.println();
         choosenChild.count(5,10);
         choosenTeen.count(53,15,532,76,43);
@@ -16,5 +16,6 @@ public class Main {
         choosenChild.write(40);
         choosenTeen.write(40);
         choosenAdult.write(40);
+        choosenAdult.checkMoney(choosenTeen,choosenChild,choosenAdult);
     }
 }

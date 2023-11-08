@@ -61,8 +61,17 @@ public class Adult extends Teen {
         int words = time*6;
         System.out.println(this.getName() + " за виділений час написав стільки слів: " + words);
     }
-
-    void howmuchmoney(Teen askedperson, Child askedperson2) {
+    class countMoney {
+        void sumMoney(Teen askedTeen, Child askedChild, Adult askedAdult){
+            double allMoney = askedTeen.getMoney() + askedChild.getMoney() + askedAdult.getMoney();
+            System.out.println("Разом є грошей: "+allMoney);
+        }
+    }
+    void checkMoney(Teen askedTeen, Child askedChild, Adult askedAdult){
+        countMoney checking = new countMoney();
+        checking.sumMoney(askedTeen,askedChild,askedAdult);
+    }
+    void howMuchMoney(Teen askedperson, Child askedperson2) {
         System.out.println("В " + askedperson.getName() + " стільки грошей: " + askedperson.getMoney());
         System.out.println("В " + askedperson2.getName() + " стільки грошей: " + askedperson2.getMoney());
     }
